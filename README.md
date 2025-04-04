@@ -8,17 +8,20 @@ API desarrollada en Python con FastAPI que permite procesar múltiples archivos 
 
 **Español:**
 
-- Recibe un archivo `.zip` que contiene múltiples archivos `.xml`.
+- Recibe un archivo `.zip` que contiene múltiples archivos `.xml` dentro de una **carpeta**.  
+  Ejemplo: `archivo.zip → carpeta → archivos.xml`
 - Cada XML es analizado de forma **dinámica** y convertido a un objeto JSON.
 - Se respetan etiquetas con prefijos (`cfdi:`, `nomina12:`, etc.) y sus atributos.
 - No hay estructura fija: funciona con cualquier XML válido.
 
 **English:**
 
-- Accepts a `.zip` file containing multiple `.xml` files.
+- Accepts a `.zip` file containing multiple `.xml` files inside a **folder**.  
+  Example: `file.zip → folder → xml files`
 - Each XML is parsed **dynamically** and converted into a JSON object.
 - Preserves tag names (with namespaces like `cfdi:`, `nomina12:`) and attributes.
 - Fully flexible: works with any well-formed XML.
+
 
 ---
 
