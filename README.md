@@ -36,8 +36,17 @@ API desarrollada en Python con FastAPI que permite procesar múltiples archivos 
    [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 3. Prueba el endpoint `POST /procesar-zip/`:
-   - Sube un archivo `.zip` que contenga uno o varios `.xml`.
+   - Sube un archivo `.zip` que contenga una **carpeta** con uno o varios archivos `.xml`.  
+     Ejemplo: `archivo.zip → carpeta → archivos.xml`
    - Recibirás una respuesta en formato JSON por cada archivo.
+
+---
+
+3. Test the `POST /procesar-zip/` endpoint:
+   - Upload a `.zip` file that includes a **folder** containing one or more `.xml` files.  
+     Example: `file.zip → folder → xml files`
+   - You'll receive a JSON response for each file.
+
 
 ---
 
